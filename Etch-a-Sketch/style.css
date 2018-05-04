@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#draw-container{
+  width: 256px;
+  height: auto;
+}
+.box{
+  display: inline-flex;
+  background: transparent;
+  width: 16px;
+  height: 16px;
+  border: 0.1px solid #eee;
+}
+
+.box-marked{
+  background: #252525;
+}
