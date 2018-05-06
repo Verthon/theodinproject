@@ -7,6 +7,14 @@ const toggleModal = () =>{
 const btn = document.querySelector('#add');
 btn.addEventListener('click', toggleModal);
 
-const addBook = () =>{
-  
+
+
+const addBook = (title, author, pages, read, books) =>{
+  const book = {
+    title: title,
+    author: author,
+    pages: pages,
+    read: read
+  }
+  books.push(book);
 }
