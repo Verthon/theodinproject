@@ -32,8 +32,12 @@ const addBook = (title, author, pages, read, books) =>{
   }
   const updateDOM = (book) =>{
       const table = document.querySelector('#library');
-      const deleteBtn = document.querySelector('#delete-btn');
-      const rowTemplate = `<tr>
+      table.addEventListener('click', (e) => {
+        if(e.target.className != "delete-btn"){console.log(e.target)}
+        let tr = e.target.closest('.row');
+        tr.remove();
+      });
+      const rowTemplate = `<tr class="row">
         <td>${book.title}</td>
         <td>${book.author}</td>
         <td>${book.number}</td>
@@ -41,9 +45,6 @@ const addBook = (title, author, pages, read, books) =>{
         <td><button id="delete-btn">x</button></td>
       </tr>`;
       table.innerHTML += rowTemplate;
-      deleteBtn.addEventListener('click', (e) => {
-        console.log(e)
-      });
    }
   updateDOM(book);
 }

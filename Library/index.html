@@ -17,7 +17,34 @@
     <input id="read" type="checkbox" placeholder="test" name="read">
     <label for="read">read</label>
     <button id="add-book">add to library</button>
-  </div>  
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Read</th>
+        <th>Delete</th> 
+      </tr>
+    </thead>
+    <tbody id="library">
+      <tr>
+        <td>Tolkien</td>
+        <td>LOTR</td>
+        <td>350</td>
+        <td>true</td>
+        <td><button id="delete-btn">x</button></td>
+      </tr>
+      <tr>
+        <td>Tolkien</td>
+        <td>Hobbit</td>
+        <td>250</td>
+        <td>false</td>
+        <td><button id="delete-btn">x</button></td>
+      </tr>
+    </tbody>
+  </table>
   <script src="script.js"></script>
 </body>
 </html>
