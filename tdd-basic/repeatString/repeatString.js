@@ -1,4 +1,4 @@
-var repeatString = function(string, number) {
+const repeatString = function(string, number) {
   let i = 1;
   let result = "";
   while(i <= number){
