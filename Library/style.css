@@ -1,3 +1,29 @@
-.modal-hidden{
-  display:none;
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.input {
+  display: flex;
+}
+
+.visually-hidden { 
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+}
+
+.container-item {
+  margin: 1rem 0;
+}
+
+.container-item__value {
+  display: inline-block;
+  min-width: 125px;
+  margin: 0 1rem;
 }
